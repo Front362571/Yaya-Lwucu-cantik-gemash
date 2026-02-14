@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love in the Stars 💫 | Happy Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Shooting Stars -->
+    <div class="shooting-stars" id="shootingStars"></div>
+
+    <!-- Planets -->
+    <div class="planet planet-1"></div>
+    <div class="planet planet-2"></div>
+    <div class="planet planet-3"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header with Astronaut -->
+        <div class="header">
+            <div class="astronaut">
+                <div class="astronaut-body">👨‍🚀</div>
+                <div class="heart-float">💝</div>
+            </div>
+            <h1 class="glitch" data-text="LOVE IN THE STARS">LOVE IN THE STARS</h1>
+            <p class="subtitle">Untuk Cintaku yang Berada di Galaksi yang Sama 💫</p>
+            <div class="constellation-line"></div>
+        </div>
+
+        <!-- Spaceship Animation -->
+        <div class="spaceship-container">
+            <div class="spaceship">🚀</div>
+            <div class="trail"></div>
+        </div>
+
+        <!-- Love Message Card -->
+        <div class="space-card card-1">
+            <div class="card-header">
+                <div class="planet-icon">🪐</div>
+                <h2>Pesan dari Galaksi Cinta</h2>
+            </div>
+            <div class="card-body">
+                <p class="typing-text" id="typingText"></p>
+                <div class="stars-decoration">✨ 🌟 ✨ 🌟 ✨</div>
+            </div>
+        </div>
+
+        <!-- Interactive Love Counter -->
+        <div class="space-card card-2">
+            <div class="card-header">
+                <div class="planet-icon">💫</div>
+                <h2>Perjalanan Cinta Kita</h2>
+            </div>
+            <div class="card-body">
+                <div class="counter-grid">
+                    <div class="counter-item">
+                        <div class="counter-value" id="daysCounter">0</div>
+                        <div class="counter-label">Hari Bersama</div>
+                        <div class="orbit-ring"></div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-value" id="hoursCounter">0</div>
+                        <div class="counter-label">Jam Bahagia</div>
+                        <div class="orbit-ring"></div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-value" id="minutesCounter">0</div>
+                        <div class="counter-label">Menit Indah</div>
+                        <div class="orbit-ring"></div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-value">∞</div>
+                        <div class="counter-label">Cinta Abadi</div>
+                        <div class="orbit-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reasons Galaxy -->
+        <div class="space-card card-3">
+            <div class="card-header">
+                <div class="planet-icon">🌌</div>
+                <h2>Galaksi Alasan Mencintaimu</h2>
+            </div>
+            <div class="card-body">
+                <div class="galaxy-reasons">
+                    <div class="reason-star" data-reason="1">
+                        <div class="star-icon">⭐</div>
+                        <div class="reason-text">Senyummu yang menerangi hari tergelapku</div>
+                    </div>
+                    <div class="reason-star" data-reason="2">
+                        <div class="star-icon">🌟</div>
+                        <div class="reason-text">Tawamu yang membuat dunia lebih indah</div>
+                    </div>
+                    <div class="reason-star" data-reason="3">
+                        <div class="star-icon">✨</div>
+                        <div class="reason-text">Keberadaanmu yang membuat hidupku sempurna</div>
+                    </div>
+                    <div class="reason-star" data-reason="4">
+                        <div class="star-icon">💫</div>
+                        <div class="reason-text">Caramu membuatku merasa istimewa</div>
+                    </div>
+                    <div class="reason-star" data-reason="5">
+                        <div class="star-icon">🌠</div>
+                        <div class="reason-text">Kasih sayangmu yang tak terbatas</div>
+                    </div>
+                    <div class="reason-star" data-reason="6">
+                        <div class="star-icon">⭐</div>
+                        <div class="reason-text">Dan segalanya tentang dirimu!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Game -->
+        <div class="space-card game-card">
+            <div class="card-header">
+                <div class="planet-icon">🎮</div>
+                <h2>Catch the Love Stars!</h2>
+            </div>
+            <div class="card-body">
+                <div class="game-info">
+                    <p>Tangkap bintang cinta sebanyak-banyaknya dalam 45 detik!</p>
+                </div>
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Score:</span>
+                        <span class="stat-value" id="gameScore">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Time:</span>
+                        <span class="stat-value" id="gameTime">45</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Best:</span>
+                        <span class="stat-value" id="bestScore">0</span>
+                    </div>
+                </div>
+                <button class="cosmic-button" id="startGameBtn">
+                    <span class="button-text">START MISSION</span>
+                    <span class="button-icon">🚀</span>
+                </button>
+                <div class="game-arena" id="gameArena">
+                    <div class="game-ready" id="gameReady">
+                        <div class="ready-text">Ready to catch some stars?</div>
+                        <div class="ready-emoji">🌟✨💫</div>
+                    </div>
+                </div>
+                <div class="game-result" id="gameResult">
+                    <h3 class="result-title">Mission Complete! 🎉</h3>
+                    <p class="result-score">Score: <span id="finalGameScore">0</span></p>
+                    <p class="result-message" id="resultMessage"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Memory Lane -->
+        <div class="space-card card-4">
+            <div class="card-header">
+                <div class="planet-icon">📸</div>
+                <h2>Kenangan di Antara Bintang</h2>
+            </div>
+            <div class="card-body">
+                <div class="memory-timeline">
+                    <div class="memory-item">
+                        <div class="memory-icon">💑</div>
+                        <div class="memory-content">
+                            <h4>Pertemuan Pertama</h4>
+                            <p>Saat pertama kali tatapan kita bertemu, aku tahu kamu istimewa</p>
+                        </div>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-icon">💕</div>
+                        <div class="memory-content">
+                            <h4>Momen Terindah</h4>
+                            <p>Setiap detik bersamamu adalah momen yang ingin aku ulangi selamanya</p>
+                        </div>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-icon">🌹</div>
+                        <div class="memory-content">
+                            <h4>Kenangan Manis</h4>
+                            <p>Tawa, tangis, dan segalanya yang kita lalui bersama</p>
+                        </div>
+                    </div>
+                    <div class="memory-item">
+                        <div class="memory-icon">💍</div>
+                        <div class="memory-content">
+                            <h4>Masa Depan Kita</h4>
+                            <p>Aku ingin menghabiskan setiap hari hingga akhir waktu denganmu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Love Letter -->
+        <div class="space-card love-letter-card">
+            <div class="card-header">
+                <div class="planet-icon">💌</div>
+                <h2>Surat dari Luar Angkasa</h2>
+            </div>
+            <div class="card-body">
+                <div class="letter-content">
+                    <p class="letter-text">
+                        Sayangku yang tercinta,
+                        <br><br>
+                        Di antara miliaran bintang di alam semesta ini, kamu adalah bintang terterang dalam hidupku. 
+                        Seperti bulan yang selalu menerangi malam, kehadiranmu membawa cahaya dalam kegelapan.
+                        <br><br>
+                        Jika cinta bisa diukur seperti jarak bintang, maka cintaku padamu adalah tak terhingga. 
+                        Kamu bukan hanya pasanganku, tapi gravitasi yang membuat hidupku tetap pada orbit yang benar.
+                        <br><br>
+                        Di hari Valentine ini, aku ingin kamu tahu bahwa dalam setiap detak jantungku, 
+                        dalam setiap napas yang aku hirup, ada cinta yang begitu besar untukmu.
+                        <br><br>
+                        Terima kasih telah menjadi alasan tersenyumku, tujuan hidupku, dan cinta sejatiku.
+                        <br><br>
+                        <span class="signature">
+                            Dengan cinta yang abadi,<br>
+                            Dari seseorang yang akan selalu mencintaimu 💙
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <button class="music-toggle" id="musicToggle">
+                <span class="music-icon">🎵</span>
+            </button>
+            <div class="music-waves">
+                <span class="wave"></span>
+                <span class="wave"></span>
+                <span class="wave"></span>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-constellation">
+                <div class="constellation-dot"></div>
+                <div class="constellation-dot"></div>
+                <div class="constellation-dot"></div>
+                <div class="constellation-dot"></div>
+                <div class="constellation-dot"></div>
+            </div>
+            <p class="footer-text">Made with 💙 from across the galaxy</p>
+            <p class="footer-quote">"Love is the gravity that keeps us together"</p>
+            <div class="footer-emoji">🌌 💫 ✨ 🌟 ⭐</div>
+        </div>
+    </div>
+
+    <!-- Particle Effect -->
+    <canvas id="particleCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
