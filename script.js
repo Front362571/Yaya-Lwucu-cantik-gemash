@@ -54,7 +54,7 @@ function typeMessage() {
 
 // ===== COUNTER ANIMATION =====
 // Ganti tanggal ini dengan tanggal pertama pacaran/kenalan
-const startDate = new Date('2023-02-14T00:00:00');
+const startDate = new Date('2026-01-29T21:25:00');
 
 function updateCounter() {
     const now = new Date();
