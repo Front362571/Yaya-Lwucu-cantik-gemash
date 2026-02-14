@@ -9,12 +9,18 @@ const CONFIG = {
 
 // ===== TYPING EFFECT =====
 const messages = [
-    "Sayangku yang tercinta... 💙",
-    "Di antara miliaran bintang di galaksi ini, kamu adalah yang paling terang benderang ✨",
-    "Seperti gravitasi yang mengikat planet, cintaku padamu tak dapat ditolak 🌍",
-    "Setiap detak jantungku berbisik namamu di keheningan luar angkasa 💓",
-    "Terima kasih telah menjadi cahaya dalam kegelapaaan hidupku 🌟",
-    "I love you to the moon and back... and to infinity! 🚀💫"
+    "Yaya, kamu tau gak? Kamu itu literally bintang paling terang di galaksi hidupku 💙✨",
+    "No cap, di antara miliaran orang, cuma Yaya yang bisa bikin jantung aku auto gravitasi kayak black hole 🌌💕",
+    "Every time aku liat senyum Yaya, rasanya kayak ngeliat supernova yang paling indah di universe 🌟😍",
+    "Yaya, kamu itu main character energy banget di storyline hidup aku 🚀💫",
+    "Aku ga bohong, presence Yaya itu vibe-nya beda... kayak nebula yang aesthetic banget 🎨✨",
+    "Feelings aku ke Yaya itu infinite, bahkan lebih luas dari observable universe 🌌💙",
+    "Yaya adalah plot twist terbaik yang pernah universe kasih ke aku 💝🌠",
+    "Kalo cinta itu cosmic radiation, berarti Yaya udah radiate seluruh existence aku 💫💕",
+    "Real talk, Yaya... kamu bukan cuma crush, tapi literally entire constellation di langit aku ⭐💙",
+    "I'm not simping, tapi Yaya emang worth it untuk dijadiin center of my galaxy 🪐💖",
+    "Yaya, thanks udah jadi oxygen di space suit kehidupan aku 🚀💙",
+    "I love you beyond the multiverse, Yaya 💫💕✨"
 ];
 
 let messageIndex = 0;
@@ -253,15 +259,15 @@ function endGame() {
     
     let message = '';
     if (gameScore >= 60) {
-        message = '🏆 AMAZING! Kamu adalah master menangkap bintang! Cintamu luar biasa! 💖';
+        message = '🏆 Wow Yaya keliatan si cinta banget sama apis 💖';
     } else if (gameScore >= 40) {
-        message = '🌟 EXCELLENT! Kamu hebat sekali sayang! Cinta kita sekuat gravitasi! 💫';
+        message = '🌟 Lucu Banget susah ya tangkep hati apis? 💫';
     } else if (gameScore >= 25) {
-        message = '✨ GREAT JOB! Kamu sudah bagus kok! Terus berlatih ya! 💙';
+        message = '✨ Kok cinta yaya kecil banget gapapa deh yang penting apis sangat sayang 💙';
     } else if (gameScore >= 10) {
-        message = '💫 GOOD TRY! Tidak apa-apa, yang penting kita bersenang-senang! 😊';
+        message = '💫 Gapapa yang penting dapat apis! 😊';
     } else {
-        message = '💝 Tidak masalah sayang, cintaku padamu tetap tak terhingga! 💕';
+        message = '💝 Gamasalah cintanya yaya tetep Yang terbaik 💕';
     }
     
     document.getElementById('resultMessage').textContent = message;
@@ -270,7 +276,7 @@ function endGame() {
     // Enable button
     startGameBtn.disabled = false;
     startGameBtn.style.opacity = '1';
-    startGameBtn.querySelector('.button-text').textContent = 'PLAY AGAIN';
+    startGameBtn.querySelector('.button-text').textContent = 'Mau mulai lagi?';
     
     // Celebration
     celebrate();
